@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GLOW - Home</title>
+    <link rel="shortcut icon" href="C:\Users\Theo\Desktop\startbootstrap-grayscale-1.0.5 - Copy\img\favicon.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- Custom Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="main.html# #page-top">
+                    <i class="fa fa-home"></i>  <span class="light">GLOW</span> 
+                </a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!--Settings Intro-->
+    <header class="settings-intro">
+        <div class="settings-intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Welcome back
+                            <?php
+                                session_start();
+                                echo $_SESSION['my_name'];
+                            ?>
+                        !</h1>
+                        <h2 class="settings-intro-text">Change your settings here to tailor your thermostat to your home</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<form id="example-form" action="#">
+    <div>
+        <h3>Account</h3>
+        <section>
+            <label for="userName">User name *</label>
+            <input id="userName" name="userName" type="text" class="required">
+            <label for="password">Password *</label>
+            <input id="password" name="password" type="text" class="required">
+            <label for="confirm">Confirm Password *</label>
+            <input id="confirm" name="confirm" type="text" class="required">
+            <p>(*) Mandatory</p>
+        </section>
+        <h3>Profile</h3>
+        <section>
+            <label for="name">First name *</label>
+            <input id="name" name="name" type="text" class="required">
+            <label for="surname">Last name *</label>
+            <input id="surname" name="surname" type="text" class="required">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="text" class="required email">
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text">
+            <p>(*) Mandatory</p>
+        </section>
+        <h3>Hints</h3>
+        <section>
+            <ul>
+                <li>Foo</li>
+                <li>Bar</li>
+                <li>Foobar</li>
+            </ul>
+        </section>
+        <h3>Finish</h3>
+        <section>
+            <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+        </section>
+    </div>
+</form>
+
+</body>
+
+</html>
+
+?>
